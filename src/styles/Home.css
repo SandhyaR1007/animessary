@@ -1,0 +1,7 @@
+.home {
+  background-color: rgb(18, 18, 18);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 4rem;
+}
