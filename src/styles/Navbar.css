@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  background-color: black;
+  color: white;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+  position: fixed;
+  width: 100%;
+}
+.navbar__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  background-color: black;
+  color: white;
+}
+.navbar__left-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__left-list-item {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.navbar__search-input {
+  background-color: rgb(244, 242, 242, 0.2);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  padding: 0.2rem 0.5rem;
+  color: white;
+  margin-right: 2rem;
+  width: 20rem;
+}
