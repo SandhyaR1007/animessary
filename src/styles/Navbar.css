@@ -3,18 +3,24 @@
   align-items: center;
   justify-content: space-between;
   padding: 0rem 1rem;
-  background-color: black;
+
   color: white;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
   position: fixed;
   width: 100%;
+  transition: all 0.3s ease-in;
+  z-index: 100;
+}
+
+.navbar__black {
+  background-color: black;
 }
 .navbar__left {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0rem 1rem;
-  background-color: black;
+  background: transparent;
   color: white;
 }
 .navbar__left-list {
@@ -27,11 +33,13 @@
   cursor: pointer;
 }
 .navbar__search-input {
-  background-color: rgb(244, 242, 242, 0.2);
+  background-color: rgb(16, 16, 16, 0.4);
+
   border: none;
   outline: none;
-  border-bottom: 1px solid white;
-  padding: 0.2rem 0.5rem;
+  border: 1px solid rgb(255, 255, 255, 0.4);
+  border-radius: 0.7rem;
+  padding: 0.3rem 0.5rem;
   color: white;
   margin-right: 2rem;
   width: 20rem;
