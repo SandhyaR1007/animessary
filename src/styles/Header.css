@@ -1,0 +1,9 @@
+.header {
+  background: url(../utils/assets/headerImg2.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2rem;
+  color: white;
+}
