@@ -1,9 +1,51 @@
 .header {
-  background: url(../utils/assets/headerImg2.jpg);
+  background: url(../utils/assets/peakpx.jpg);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 2rem;
   color: white;
+  position: relative;
+}
+.header__content {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 10px;
+
+  transform: translate(0%, -40%);
+  padding: 0 2rem;
+}
+.header__content-heading {
+  font-size: 3rem;
+}
+.header__content-description {
+  font-size: 0.8rem;
+  color: rgb(234, 228, 228);
+}
+.header__content-button {
+  padding: 0.5rem 3rem;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 0.1rem;
+  cursor: pointer;
+}
+.header__content-button:hover {
+  opacity: 0.9;
+}
+.header__content-button-play {
+  margin-right: 0.4rem;
+}
+.header__content-button span {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 600px) {
+  .header__content-heading {
+    width: 80%;
+  }
+  .header__content-description {
+    width: 50%;
+  }
 }
