@@ -27,7 +27,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar__search">
-        <input type="text" className="navbar__search-input" />
+        <input
+          type="text"
+          className="navbar__search-input"
+          placeholder="Search your anime"
+        />
+        <i className="fa-solid fa-magnifying-glass navbar__search-bar"></i>
       </div>
     </nav>
   );
