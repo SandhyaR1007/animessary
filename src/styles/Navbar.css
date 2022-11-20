@@ -24,6 +24,10 @@
   background: transparent;
   color: white;
 }
+.navbar__left-logo {
+  font-size: 1.2rem;
+  font-style: italic;
+}
 .navbar__left-list {
   list-style: none;
   display: flex;
@@ -32,6 +36,7 @@
 .navbar__left-list-item {
   margin: 0 1rem;
   cursor: pointer;
+  font-size: 0.85rem;
 }
 .navbar__search-input {
   background-color: rgba(126, 126, 126, 0.4);
@@ -40,10 +45,10 @@
   outline: none;
   /* border: 1px solid rgba(126, 126, 126, 0.4); */
   border-radius: 0.7rem;
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem 0.7rem;
   color: white;
   margin-right: 2rem;
-  width: 20rem;
+  width: 18rem;
   position: relative;
   display: none;
 }
