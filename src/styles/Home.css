@@ -2,9 +2,13 @@
   background-color: rgb(0, 0, 0);
   color: white;
   display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+  justify-content: center;
+}
+.home__animeList {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0.5rem 2rem;
-  /* align-items: center; */
   justify-content: center;
 }

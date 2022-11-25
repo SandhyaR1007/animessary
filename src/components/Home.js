@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/Home.css";
 import { getAllAnimes } from "../utils/APIHelper";
 import Card from "./Card";
+import Header from "./Header";
 const Home = () => {
   const [allAnimesData, setAllAnimesData] = useState([]);
   useEffect(() => {
@@ -20,12 +21,18 @@ const Home = () => {
   };
 
   return (
-    <div className="home">
-      {allAnimesData.length > 0 &&
-        allAnimesData.map(({ title, image }) => (
-          <Card title={title} image={image} />
-        ))}
-    </div>
+    <>
+      <Header />
+      <div className="home">
+        <h3>Recently Updated</h3>
+        <div className="home__animeList">
+          {allAnimesData.length > 0 &&
+            allAnimesData.map(({ title, image }) => (
+              <Card title={title} image={image} />
+            ))}
+        </div>
+      </div>
+    </>
   );
 };
 
