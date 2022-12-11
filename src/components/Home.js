@@ -3,6 +3,7 @@ import "../styles/Home.css";
 import { getAllAnimes } from "../utils/APIHelper";
 import Card from "./Card";
 import Header from "./Header";
+import Main from "./Main";
 const Home = () => {
   const [allAnimesData, setAllAnimesData] = useState([]);
   useEffect(() => {
@@ -23,15 +24,16 @@ const Home = () => {
   return (
     <>
       <Header />
-      <div className="home">
+      {/* <div className="home">
         <h3>Recently Updated</h3>
         <div className="home__animeList">
           {allAnimesData.length > 0 &&
-            allAnimesData.map(({ title, image }) => (
-              <Card title={title} image={image} />
+            allAnimesData.map(({ _id, title, image }) => (
+              <Card key={_id} title={title} image={image} />
             ))}
         </div>
-      </div>
+      </div> */}
+      <Main dataList={allAnimesData} heading="Recently Updated" />
     </>
   );
 };
