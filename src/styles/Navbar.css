@@ -27,6 +27,8 @@
 .navbar__left-logo {
   font-size: 1.2rem;
   font-style: italic;
+  text-decoration: none;
+  color: white;
 }
 .navbar__left-list {
   list-style: none;
@@ -37,6 +39,8 @@
   margin: 0 1rem;
   cursor: pointer;
   font-size: 0.85rem;
+  text-decoration: none;
+  color: white;
 }
 .navbar__search-input {
   background-color: rgba(126, 126, 126, 0.4);
