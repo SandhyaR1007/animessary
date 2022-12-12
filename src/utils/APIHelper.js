@@ -2,6 +2,7 @@ import axios from "axios";
 import {
   GET_ALL_ANIMES,
   GET_ALL_GENRES,
+  GET_ANIME_BY_ID,
   GET_ONE_ANIME_BY_RANKING,
 } from "./API";
 const REACT_APP_API_KEY = "f294a746c3mshcebf8b9885eb1eep1c6a56jsn984b7716730c";
@@ -87,6 +88,29 @@ export const getAllGenre = async () => {
   const options = {
     method: "GET",
     url: GET_ALL_GENRES,
+    headers: headers,
+  };
+  let apiData = "";
+  await axios
+    .request(options)
+    .then(function (response) {
+      console.log(response.data);
+      apiData = { status: "success", data: response.data };
+      return { status: "success", data: response.data };
+    })
+    .catch(function (error) {
+      console.error(error);
+      apiData = { status: "error", data: error };
+      return { status: "error", data: error };
+    });
+  return apiData;
+};
+
+export const getAnimeById = async (id) => {
+  const options = {
+    method: "GET",
+    url: GET_ANIME_BY_ID + id,
+
     headers: headers,
   };
   let apiData = "";
