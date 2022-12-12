@@ -4,7 +4,7 @@
   justify-content: space-between;
   padding: 0rem 1rem;
 
-  color: white;
+  color: var(--white-color);
 
   position: fixed;
   width: 100%;
@@ -22,13 +22,13 @@
   justify-content: space-between;
   padding: 0rem 1rem;
   background: transparent;
-  color: white;
+  color: var(--white-color);
 }
 .navbar__left-logo {
   font-size: 1.2rem;
   font-style: italic;
   text-decoration: none;
-  color: white;
+  color: var(--white-color);
 }
 .navbar__left-list {
   list-style: none;
@@ -40,7 +40,7 @@
   cursor: pointer;
   font-size: 0.85rem;
   text-decoration: none;
-  color: white;
+  color: var(--white-color);
 }
 .navbar__search-input {
   background-color: rgba(126, 126, 126, 0.4);
@@ -50,7 +50,7 @@
   /* border: 1px solid rgba(126, 126, 126, 0.4); */
   border-radius: 0.7rem;
   padding: 0.3rem 0.7rem;
-  color: white;
+  color: var(--white-color);
   margin-right: 2rem;
   width: 18rem;
   position: relative;
@@ -58,7 +58,7 @@
 }
 .navbar__search-bar {
   position: absolute;
-  color: lightgray;
+  color: var(--light-gray);
   font-size: 0.6rem;
   top: 42%;
   right: 6%;

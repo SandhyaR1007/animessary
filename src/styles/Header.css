@@ -1,15 +1,16 @@
 .header {
-  background: url(../utils/assets/peakpx.jpg);
+  background: url(../utils/assets/peakpx.jpg),
+    url(../utils/assets/peakpx-low.jpg);
   height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
   padding-top: 2rem;
-  color: white;
+  color: var(--white-color);
   position: relative;
 }
 .header__content {
-  color: white;
+  color: var(--white-color);
   position: absolute;
   top: 40%;
   left: 10px;
@@ -22,11 +23,11 @@
 }
 .header__content-description {
   font-size: 0.8rem;
-  color: rgb(234, 228, 228);
+  color: var(--light-gray);
 }
 .header__content-button {
   padding: 0.5rem 3rem;
-  background-color: white;
+  background-color: var(--white-color);
   outline: none;
   border: none;
   border-radius: 0.1rem;

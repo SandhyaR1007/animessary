@@ -1,7 +1,7 @@
 .genreList {
   position: absolute;
-  background-color: rgb(20, 20, 20);
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--white-color);
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -21,9 +21,9 @@
   text-decoration: none;
   width: 100%;
   text-align: center;
-  color: gray;
+  color: var(--mid-gray);
 }
 .genreList a:hover {
-  background-color: rgb(32, 33, 33);
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--white-color);
 }

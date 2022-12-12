@@ -1,6 +1,6 @@
 .home {
-  background-color: rgb(18, 18, 18);
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--white-color);
   display: flex;
   flex-direction: column;
   padding: 0.5rem 2rem;
