@@ -24,15 +24,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      {/* <div className="home">
-        <h3>Recently Updated</h3>
-        <div className="home__animeList">
-          {allAnimesData.length > 0 &&
-            allAnimesData.map(({ _id, title, image }) => (
-              <Card key={_id} title={title} image={image} />
-            ))}
-        </div>
-      </div> */}
+
       <Main dataList={allAnimesData} heading="Recently Updated" />
     </>
   );

@@ -8,7 +8,7 @@ const Main = ({ heading, dataList }) => {
       <div className="home__animeList">
         {dataList.length > 0 &&
           dataList.map(({ _id, title, image }) => (
-            <Card key={_id} title={title} image={image} />
+            <Card key={_id} title={title} image={image} _id={_id} />
           ))}
       </div>
     </div>
