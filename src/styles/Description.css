@@ -24,9 +24,27 @@
   font-size: 0.7rem;
   padding: 3px 5px;
   border-bottom-right-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 .description__right {
   width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.description__right-synopsis {
+  max-width: 500px;
+}
+.description__info {
+  padding: 5px 0px;
+}
+.description__info-head {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.description__info-value {
+  font-size: 0.8rem;
 }
 .desciption__right-genres {
   margin-top: 1rem;
@@ -34,10 +52,11 @@
 .desciption__right-genres__bullet {
   margin-right: 0.5rem;
   margin-top: 1rem;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
+  font-weight: 600;
   color: var(--bg-color);
   background-color: var(--white-color);
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem 0.4rem;
   border-radius: 1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

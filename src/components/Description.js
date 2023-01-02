@@ -32,13 +32,17 @@ const Description = () => {
           alt={descriptionData.title}
         />
         <span className="description__left-tag">{descriptionData.type}</span>
-        <div>
-          <span>Episodes: </span>
-          <span>{descriptionData.episodes}</span>
+        <div className="description__info">
+          <span className="description__info-head">Episodes: </span>
+          <span className="description__info-value">
+            {descriptionData.episodes}
+          </span>
         </div>
-        <div>
-          <span>Ranking: </span>
-          <span>{descriptionData.ranking}</span>
+        <div className="description__info">
+          <span className="description__info-head">Ranking: </span>
+          <span className="description__info-value">
+            {descriptionData.ranking}
+          </span>
         </div>
       </div>
       <div className="description__right">
